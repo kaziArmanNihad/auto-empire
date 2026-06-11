@@ -1,4 +1,5 @@
 import { FooterSection } from "@/app/constants";
+import Image from "next/image";
 import Link from "next/link";
 
 function Footer() {
@@ -6,13 +7,22 @@ function Footer() {
     <footer className="w-full">
       <div className="mx-auto w-4/5 py-10">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-3">
-          <div>
+          <div className="flex flex-col items-center text-center md:items-start md:text-left">
             <Link href="#hero">
-              <h1 className="text-left text-3xl font-bold italic text-stone-600">
-                {FooterSection.title}
-              </h1>
+              <div className="flex items-center justify-start gap-2">
+                <Image
+                  alt="auto empire logo"
+                  src="/images/Other_Images/logo.png"
+                  width={50}
+                  height={50}
+                />
+                <h1 className="text-xl font-bold italic text-stone-600 xl:text-3xl">
+                  {FooterSection.title}
+                </h1>
+              </div>
             </Link>
-            <p className="mt-6 text-sm hover:text-orange-600 md:text-base">
+
+            <p className="mt-6 text-left text-sm text-gray-600 hover:text-orange-600 md:text-base">
               {FooterSection.description}
             </p>
           </div>

@@ -21,8 +21,8 @@ export default function PaymentCancelPage() {
           Payment Canceled ⚠️
         </h1>
         <p className="mt-3 text-white">
-          Your payment has been canceled. If this was unintentional, you can try again
-          from your transactions page.
+          Your payment has been canceled. If this was unintentional, you can try
+          again from your transactions page.
         </p>
         <p className="mt-1 text-sm text-white">
           You will be redirected shortly...

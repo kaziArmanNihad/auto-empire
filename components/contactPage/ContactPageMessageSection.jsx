@@ -23,7 +23,9 @@ function ContactPageMessageSection() {
           {...getAnimation("left", { delay: 0.2 })}
           className="w-1/2 space-y-3"
         >
-          <h1 className="text-5xl font-bold">{ContactMessageSection.subtitle}</h1>
+          <h1 className="text-5xl font-bold">
+            {ContactMessageSection.subtitle}
+          </h1>
           <p className="cursor-text hover:text-orange-600">
             {ContactMessageSection.description}
           </p>
@@ -37,10 +39,22 @@ function ContactPageMessageSection() {
             >
               <h1 className="text-2xl font-bold">Social Network</h1>
               <div className="flex items-center justify-start gap-2">
-                <FaFacebook className="cursor-pointer hover:text-blue-600" size={20} />
-                <FaLinkedin className="cursor-pointer hover:text-blue-600" size={20} />
-                <FaXTwitter className="cursor-pointer hover:text-blue-600" size={20} />
-                <SiInstagram className="cursor-pointer hover:text-blue-600" size={20} />
+                <FaFacebook
+                  className="cursor-pointer hover:text-blue-600"
+                  size={20}
+                />
+                <FaLinkedin
+                  className="cursor-pointer hover:text-blue-600"
+                  size={20}
+                />
+                <FaXTwitter
+                  className="cursor-pointer hover:text-blue-600"
+                  size={20}
+                />
+                <SiInstagram
+                  className="cursor-pointer hover:text-blue-600"
+                  size={20}
+                />
               </div>
             </motion.div>
 
@@ -50,8 +64,12 @@ function ContactPageMessageSection() {
               className="w-1/2 space-y-3"
             >
               <h1 className="text-2xl font-bold">Hot-Line</h1>
-              <p className="cursor-pointer hover:text-blue-600">+880 1512345678</p>
-              <p className="cursor-pointer hover:text-blue-600">+880 1612345678</p>
+              <p className="cursor-pointer hover:text-blue-600">
+                +880 1512345678
+              </p>
+              <p className="cursor-pointer hover:text-blue-600">
+                +880 1612345678
+              </p>
             </motion.div>
           </div>
         </motion.div>

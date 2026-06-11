@@ -79,7 +79,6 @@ function MyCarsPage() {
   const orders =
     orderData?.filter((order) => order.buyerEmail === user?.userEmail) ?? [];
 
-
   return <DataTable columns={columns} data={orders} />;
 }
 

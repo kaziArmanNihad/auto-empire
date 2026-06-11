@@ -60,7 +60,7 @@ function ManageOrderPage() {
         );
       },
     },
-  ];  
+  ];
 
   const { data: orderData, isLoading, isError, error } = useGetOrdersQuery();
 

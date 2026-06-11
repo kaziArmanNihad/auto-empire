@@ -1,5 +1,5 @@
-import ContactPageHeroSection from '../../components/contactPage/ContactPageHeroSection';
-import ContactPageMessageSection from '../../components/contactPage/ContactPageMessageSection';
+import ContactPageHeroSection from "../../components/contactPage/ContactPageHeroSection";
+import ContactPageMessageSection from "../../components/contactPage/ContactPageMessageSection";
 
 function page() {
   return (

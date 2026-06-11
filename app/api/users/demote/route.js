@@ -11,14 +11,14 @@ export async function PATCH(request) {
     if (!_id) {
       return NextResponse.json(
         { message: "User ID is required" },
-        { status: 400 }
+        { status: 400 },
       );
     }
 
     const updatedUser = await User.findByIdAndUpdate(
       _id,
       { userRole: "user" },
-      { new: true, runValidators: true }
+      { new: true, runValidators: true },
     );
 
     if (!updatedUser) {
@@ -30,7 +30,7 @@ export async function PATCH(request) {
     console.error("Error demoting user:", error);
     return NextResponse.json(
       { message: "Failed to demote user" },
-      { status: 500 }
+      { status: 500 },
     );
   }
 }

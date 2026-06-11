@@ -78,7 +78,7 @@ export async function PATCH(request) {
         { status: 400 },
       );
     }
-    
+
     const updatedUser = await User.findOneAndUpdate(
       { userEmail: userEmail.trim().toLowerCase() },
       updates,

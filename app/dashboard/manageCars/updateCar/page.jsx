@@ -85,44 +85,48 @@ function UpdateCar() {
     );
 
   return (
-  <Card className="mx-auto my-5 w-11/12 max-w-3xl px-4">
-  <CardHeader>
-    <CardTitle className="text-center">Update Car</CardTitle>
-  </CardHeader>
-  <form onSubmit={handleSubmit}>
-    <CardContent className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-      {[
-        { label: "Car Name", name: "carName", type: "text" },
-        { label: "Brand", name: "brand", type: "text" },
-        { label: "Model Name", name: "modelName", type: "text" },
-        { label: "Price ($)", name: "price", type: "number" },
-        { label: "Release Year", name: "releaseYear", type: "number" },
-        { label: "Stock Available", name: "stockAvailable", type: "number" },
-        { label: "Image URL", name: "image", type: "text", colSpan: true },
-      ].map(({ label, name, type, colSpan }) => (
-        <div key={name} className={colSpan ? "sm:col-span-2" : ""}>
-          <Label htmlFor={name}>{label}</Label>
-          <Input
-            id={name}
-            name={name}
-            type={type}
-            value={formData[name]}
-            onChange={handleChange}
-            required
-          />
-        </div>
-      ))}
-    </CardContent>
-    <CardFooter className="flex justify-end gap-5">
-      <Button variant="destructive" type="button" onClick={handleCancel}>
-        Cancel
-      </Button>
-      <Button variant="success" type="submit">
-        Update
-      </Button>
-    </CardFooter>
-  </form>
-</Card>
+    <Card className="mx-auto my-5 w-11/12 max-w-3xl px-4">
+      <CardHeader>
+        <CardTitle className="text-center">Update Car</CardTitle>
+      </CardHeader>
+      <form onSubmit={handleSubmit}>
+        <CardContent className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+          {[
+            { label: "Car Name", name: "carName", type: "text" },
+            { label: "Brand", name: "brand", type: "text" },
+            { label: "Model Name", name: "modelName", type: "text" },
+            { label: "Price ($)", name: "price", type: "number" },
+            { label: "Release Year", name: "releaseYear", type: "number" },
+            {
+              label: "Stock Available",
+              name: "stockAvailable",
+              type: "number",
+            },
+            { label: "Image URL", name: "image", type: "text", colSpan: true },
+          ].map(({ label, name, type, colSpan }) => (
+            <div key={name} className={colSpan ? "sm:col-span-2" : ""}>
+              <Label htmlFor={name}>{label}</Label>
+              <Input
+                id={name}
+                name={name}
+                type={type}
+                value={formData[name]}
+                onChange={handleChange}
+                required
+              />
+            </div>
+          ))}
+        </CardContent>
+        <CardFooter className="flex justify-end gap-5">
+          <Button variant="destructive" type="button" onClick={handleCancel}>
+            Cancel
+          </Button>
+          <Button variant="success" type="submit">
+            Update
+          </Button>
+        </CardFooter>
+      </form>
+    </Card>
   );
 }
 

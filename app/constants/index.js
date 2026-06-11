@@ -71,7 +71,7 @@ export const latestSectionImages = [
 ];
 
 export const TopSellSection = {
-  title: "Explore Our Top-Selling Vehicles",
+  title: "Explore Our Top Selling Vehicles",
   description:
     "At Auto empire, we’re proud to showcase our top-selling cars, each representing the pinnacle of excellence in their respective categories. Discover why these models have captured the hearts of our customers and continue to lead the way in luxury and performance.",
 };
@@ -121,7 +121,7 @@ export const EmpireServiceSection = {
   title: "Empire Service Hubs",
   heading: "Where Precision Meets Performance",
   descriptionOne:
-    "Discover Auto Empire’s elite network of certified service hubs, built to deliver unmatched care for your luxury, racing, and SUV vehicles. From routine maintenance to advanced diagnostics, your ride is in expert hands.",
+    "Expert service for luxury, racing, and SUV vehicles across Auto Empire’s trusted network.",
   ImageOne: ServiceSectionCarOne,
   ImageTwo: ServiceSectionCarTwo,
   ImageThree: ServiceSectionCarThree,

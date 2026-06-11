@@ -86,7 +86,7 @@ export async function PATCH(request) {
     if (!id) {
       return NextResponse.json(
         { message: "Car ID is required in request body" },
-        { status: 400 }
+        { status: 400 },
       );
     }
 
@@ -104,7 +104,7 @@ export async function PATCH(request) {
     console.error("Error updating car:", error);
     return NextResponse.json(
       { message: "Failed to update the car", error: error.message },
-      { status: 500 }
+      { status: 500 },
     );
   }
 }

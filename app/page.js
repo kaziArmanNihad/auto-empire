@@ -8,7 +8,7 @@ import TreasureComponent from "../components/homePage/TreasureComponent";
 
 function Home() {
   return (
-    <div>
+    <div className="space-y-10">
       <HeroComponent />
       <LetestComponent />
       <TopSellComponent />

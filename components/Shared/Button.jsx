@@ -1,14 +1,13 @@
 import React from "react";
 
 const Button = ({ children, className = "", ...props }) => {
-  
   return (
     <button
-    {...props}
-    className={`px-4 py-2 rounded-md text-white bg-black hover:bg-orange-500 transition-colors duration-300 ${className}`}
-  >
-    {children}
-  </button>
+      {...props}
+      className={`rounded-md bg-black px-4 py-2 text-white transition-colors duration-300 hover:bg-orange-500 ${className}`}
+    >
+      {children}
+    </button>
   );
 };
 

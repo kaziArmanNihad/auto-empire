@@ -56,7 +56,6 @@ function AuthinticationSection() {
         showSuccess("Sign-In Successfull!");
       })
       .catch(() => {
-
         // showing an alert
         showError("Error In Signin Process, Try Again!");
       });
@@ -91,7 +90,6 @@ function AuthinticationSection() {
         showSuccess("Sign-Up Successfull!");
       })
       .catch(() => {
-
         // showing an alert
         showError("Error In Signup Process, Try Again!");
       });
@@ -102,7 +100,6 @@ function AuthinticationSection() {
     dispatch(googleSignIn())
       .unwrap()
       .then((data) => {
-
         // sending data in the server
         const userInfo = {
           userName: data.userName,
@@ -125,7 +122,6 @@ function AuthinticationSection() {
         showSuccess("Sign-Up Successfull!");
       })
       .catch((error) => {
-
         // clearing all inputs
         resetSignIn();
         resetSignUp();
@@ -162,7 +158,6 @@ function AuthinticationSection() {
         showSuccess("Sign-Up Successfull!");
       })
       .catch(() => {
-
         // clearing all inputs
         resetSignIn();
         resetSignUp();
@@ -172,23 +167,20 @@ function AuthinticationSection() {
       });
   };
 
-   return (
+  return (
     // Base container: Centered flex layout for all screen sizes
     <div className="flex min-h-screen flex-col items-center justify-center bg-black p-4 text-white md:p-5">
       {/* Main Wrapper: Styles for mobile-first, with overrides for md and larger screens */}
       <div
-        className={`relative bg-black w-full max-w-md rounded-lg 
-                    md:w-[768px] md:max-w-full md:min-h-[480px] md:mt-20 md:rounded-[30px] md:border-2 md:border-white md:overflow-hidden`}
+        className={`relative w-full max-w-md rounded-lg bg-black md:mt-20 md:min-h-[480px] md:w-[768px] md:max-w-full md:overflow-hidden md:rounded-[30px] md:border-2 md:border-white`}
       >
         {/* Sign Up Form Container */}
         <div
-          className={`w-full transition-all duration-700 ease-in-out 
-                      md:absolute md:left-0 md:top-0 md:h-full md:w-1/2 
-                      ${
-                        isActive
-                          ? "block md:z-[5] md:translate-x-full md:opacity-100"
-                          : "hidden md:block md:z-[1] md:opacity-0"
-                      }`}
+          className={`w-full transition-all duration-700 ease-in-out md:absolute md:left-0 md:top-0 md:h-full md:w-1/2 ${
+            isActive
+              ? "block md:z-[5] md:translate-x-full md:opacity-100"
+              : "hidden md:z-[1] md:block md:opacity-0"
+          }`}
         >
           <form
             onSubmit={handleSignUp(onSignUp)}
@@ -230,7 +222,10 @@ function AuthinticationSection() {
               className="my-2 w-full rounded-md border-none bg-gray-200 px-4 py-2 text-sm text-black outline-none"
               {...registerSignUp("userEmail", {
                 required: "Email is required",
-                pattern: { value: /^\S+@\S+$/i, message: "Invalid email address" },
+                pattern: {
+                  value: /^\S+@\S+$/i,
+                  message: "Invalid email address",
+                },
               })}
             />
             {signUpErrors.userEmail && (
@@ -244,7 +239,10 @@ function AuthinticationSection() {
               className="my-2 w-full rounded-md border-none bg-gray-200 px-4 py-2 text-sm text-black outline-none"
               {...registerSignUp("userPassword", {
                 required: "Password is required",
-                minLength: { value: 6, message: "Password must be at least 6 characters" },
+                minLength: {
+                  value: 6,
+                  message: "Password must be at least 6 characters",
+                },
               })}
             />
             {signUpErrors.userPassword && (
@@ -260,9 +258,7 @@ function AuthinticationSection() {
 
         {/* Sign In Form Container */}
         <div
-          className={`w-full transition-all duration-700 ease-in-out 
-                      md:absolute md:left-0 md:top-0 md:z-[2] md:h-full md:w-1/2 
-                      ${isActive ? "hidden md:block md:translate-x-full" : "block"}`}
+          className={`w-full transition-all duration-700 ease-in-out md:absolute md:left-0 md:top-0 md:z-[2] md:h-full md:w-1/2 ${isActive ? "hidden md:block md:translate-x-full" : "block"}`}
         >
           <form
             onSubmit={handleSignIn(onSignIn)}
@@ -292,7 +288,10 @@ function AuthinticationSection() {
               className="my-2 w-full rounded-md border-none bg-gray-200 px-4 py-2 text-sm text-black outline-none"
               {...registerSignIn("userEmail", {
                 required: "Email is required",
-                pattern: { value: /^\S+@\S+$/i, message: "Invalid email format" },
+                pattern: {
+                  value: /^\S+@\S+$/i,
+                  message: "Invalid email format",
+                },
               })}
             />
             {signInErrors.userEmail && (
@@ -303,7 +302,10 @@ function AuthinticationSection() {
             <input
               {...registerSignIn("userPassword", {
                 required: "Password is required",
-                minLength: { value: 6, message: "Password must be at least 6 characters" },
+                minLength: {
+                  value: 6,
+                  message: "Password must be at least 6 characters",
+                },
               })}
               type="password"
               placeholder="Password"
@@ -322,7 +324,7 @@ function AuthinticationSection() {
 
         {/* Toggle Container for Desktop (md and up) */}
         <div
-          className={`hidden md:block absolute left-1/2 top-0 z-[1000] h-full w-1/2 overflow-hidden transition-all duration-700 ease-in-out ${
+          className={`absolute left-1/2 top-0 z-[1000] hidden h-full w-1/2 overflow-hidden transition-all duration-700 ease-in-out md:block ${
             isActive ? "-translate-x-full" : ""
           }`}
           style={{

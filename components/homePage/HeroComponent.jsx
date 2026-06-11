@@ -29,13 +29,13 @@ function HeroComponent() {
             </motion.span>
             <motion.span
               {...getAnimation("left", { delay: 2 })}
-              className="cursor-text text-left text-sm hover:text-orange-500 xl:text-lg sm:text-base"
+              className="cursor-text text-left text-sm hover:text-orange-500 sm:text-base xl:text-lg"
             >
               {heroSection.secondDescription}
             </motion.span>
             <motion.h3
               {...getAnimation("bottom", { delay: 2.5 })}
-              className="text-center text-sm font-bold text-stone-600 xl:text-lg sm:text-base"
+              className="text-center text-sm font-bold text-stone-600 sm:text-base xl:text-lg"
             >
               {heroSection.subtitle}
             </motion.h3>
