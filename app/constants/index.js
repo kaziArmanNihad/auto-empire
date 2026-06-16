@@ -44,7 +44,7 @@ export const heroSection = {
   subtitle:
     "Stay informed, stay inspired, and stay ahead with Auto Empire — where your journey begins.",
   description:
-    "We're thrilled to have you here at Auto empire, your premier destination for all things automotive. Whether you're looking for expert advice, the latest industry trends, or top-notch services to keep your vehicle in peak condition, you've come to the right place.",
+    "We're thrilled to have you here at Auto empire, your premier destination for all things automotive. Whether you're looking for expert advice, the latest industry trends, or top notch services to keep your vehicle in peak condition, you've come to the right place.",
   secondDescription:
     "From routine maintenance to performance upgrades, we’re here to help you drive with confidence. Our team of seasoned professionals is dedicated to delivering excellence, ensuring your car runs as smoothly as the day you got it.",
 };

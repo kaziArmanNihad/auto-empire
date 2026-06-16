@@ -130,7 +130,7 @@ function EmpireServiceComponent() {
         <ServiceImage
           src={EmpireServiceSection.ImageFive}
           label="Scale"
-          className="xl:row-start-2"
+          className="sm:col-span-2 xl:row-start-2 md:col-span-1"
           animProps={getAnimation("bottom", { delay: 1 })}
         />
 
@@ -138,7 +138,7 @@ function EmpireServiceComponent() {
         <ServiceImage
           src={EmpireServiceSection.ImageSix}
           label="Strategy"
-          className="sm:col-span-2 xl:col-span-2 xl:row-start-2"
+          className="sm:col-span-2 md:col-span-1 xl:col-span-2 xl:row-start-2"
           animProps={getAnimation("right", { delay: 0.5 })}
         />
       </div>

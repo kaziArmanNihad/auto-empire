@@ -21,15 +21,7 @@ function StockComponent() {
 
   return (
     <section className="relative mx-auto w-11/12 max-w-screen-xl overflow-hidden py-20 xl:w-4/5">
-      {/* Ambient background glow */}
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute -top-32 left-1/2 h-[400px] w-[600px] -translate-x-1/2 rounded-full opacity-10 blur-3xl"
-        style={{
-          background:
-            "radial-gradient(ellipse, #6ee7b7 0%, #a78bfa 50%, transparent 80%)",
-        }}
-      />
+      
 
       {/* ── Header ── */}
       <div className="relative mb-16 flex flex-col items-center gap-5 px-4 text-center">

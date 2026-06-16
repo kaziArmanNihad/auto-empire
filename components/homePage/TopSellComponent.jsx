@@ -43,7 +43,7 @@ function TopSellComponent() {
             className="flex flex-col gap-4"
           >
             {/* Image */}
-            <div className="relative h-64 w-full overflow-hidden rounded-2xl sm:h-72">
+            <div className="relative h-64 w-full overflow-hidden rounded-2xl sm:h-40 xl:h-80">
               <Image
                 src={value.image}
                 alt={value.model ?? "Top sell item"}

@@ -12,7 +12,7 @@ function SpotlightComponent() {
       {/* ── Header ── */}
       <div className="mb-8 flex flex-col items-center gap-3 text-center">
         <motion.span
-          {...getAnimation("top")}
+          {...getAnimation("top", { delay: 0.15 })}
           className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-orange-400"
         >
           <span className="h-1.5 w-1.5 rounded-full bg-orange-400" />
@@ -35,7 +35,7 @@ function SpotlightComponent() {
       {/* ── Split layout ── */}
       <div className="flex flex-col gap-10 overflow-hidden md:flex-row md:items-stretch xl:gap-16">
         {/* ── Left: text content ── */}
-        <div className="flex flex-col justify-center gap-3 md:w-3/5">
+        <div className="flex flex-col justify-center gap-3 lg:w-3/5">
           <motion.h3
             {...getAnimation("left", { delay: 0.2 })}
             className="text-2xl font-bold leading-snug text-white sm:text-3xl xl:text-2xl"
@@ -85,7 +85,7 @@ function SpotlightComponent() {
         {/* ── Right: image card ── */}
         <motion.div
           {...getAnimation("right", { delay: 0.3 })}
-          className="group relative flex items-center justify-center md:w-2/5"
+          className="group relative flex items-center justify-center md:w-2/5 hidden lg:block"
         >
           {/* Glow behind image */}
           <div
