@@ -8,7 +8,6 @@ import { getAnimation } from "@/utils/Animation";
 import Link from "next/link";
 
 function HeroComponent() {
-
   return (
     <section
       id="hero"

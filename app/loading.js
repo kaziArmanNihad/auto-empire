@@ -6,7 +6,6 @@ import { motion } from "framer-motion";
 function Loading({ message = "Loading..." }) {
   return (
     <div className="relative flex h-screen w-full flex-col items-center justify-center gap-6 overflow-hidden bg-black">
-
       {/* Ambient glow */}
       <div
         aria-hidden="true"
@@ -19,9 +18,7 @@ function Loading({ message = "Loading..." }) {
 
       {/* Spinner */}
       <div className="relative h-12 w-12">
-        <motion.span
-          className="absolute inset-0 rounded-full border-2 border-white/10"
-        />
+        <motion.span className="absolute inset-0 rounded-full border-2 border-white/10" />
         <motion.span
           className="absolute inset-0 rounded-full border-2 border-transparent border-t-orange-400"
           animate={{ rotate: 360 }}
@@ -39,7 +36,12 @@ function Loading({ message = "Loading..." }) {
         <motion.h1
           initial={{ opacity: 0.4 }}
           animate={{ opacity: 1 }}
-          transition={{ repeat: Infinity, duration: 1.2, ease: "easeInOut", repeatType: "reverse" }}
+          transition={{
+            repeat: Infinity,
+            duration: 1.2,
+            ease: "easeInOut",
+            repeatType: "reverse",
+          }}
           className="text-center text-sm font-bold text-white sm:text-base md:text-lg xl:text-2xl"
         >
           {message}

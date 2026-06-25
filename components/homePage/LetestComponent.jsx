@@ -14,9 +14,6 @@ const ACCENTS = [
 function LatestComponent() {
   return (
     <section className="relative mx-auto w-11/12 max-w-screen-xl py-16 xl:w-4/5 xl:py-24">
-     
-     
-
       {/* ── Header ── */}
       <div className="mb-12 flex flex-col items-center gap-4 text-center">
         <motion.span
@@ -64,8 +61,6 @@ function LatestComponent() {
               }}
               className="border-white/8 group relative h-32 w-32 shrink-0 overflow-hidden rounded-2xl border sm:h-40 sm:w-40 lg:h-64 lg:w-64"
             >
-              
-
               <Image
                 src={img.image}
                 alt="Latest arrival"

@@ -85,7 +85,7 @@ function SpotlightComponent() {
         {/* ── Right: image card ── */}
         <motion.div
           {...getAnimation("right", { delay: 0.3 })}
-          className="group relative flex items-center justify-center md:w-2/5 hidden lg:block"
+          className="group relative flex hidden items-center justify-center md:w-2/5 lg:block"
         >
           {/* Glow behind image */}
           <div

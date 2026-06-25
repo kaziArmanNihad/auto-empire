@@ -21,8 +21,6 @@ function StockComponent() {
 
   return (
     <section className="relative mx-auto w-11/12 max-w-screen-xl overflow-hidden py-20 xl:w-4/5">
-      
-
       {/* ── Header ── */}
       <div className="relative mb-16 flex flex-col items-center gap-5 px-4 text-center">
         {/* Eyebrow label */}

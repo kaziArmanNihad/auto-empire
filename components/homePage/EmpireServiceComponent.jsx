@@ -130,7 +130,7 @@ function EmpireServiceComponent() {
         <ServiceImage
           src={EmpireServiceSection.ImageFive}
           label="Scale"
-          className="sm:col-span-2 xl:row-start-2 md:col-span-1"
+          className="sm:col-span-2 md:col-span-1 xl:row-start-2"
           animProps={getAnimation("bottom", { delay: 1 })}
         />
 
