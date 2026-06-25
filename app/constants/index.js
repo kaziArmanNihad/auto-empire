@@ -475,7 +475,7 @@ export const InventorySection = [
 export const AboutPrestigeSection = {
   imageOne: AboutPrestigeSectionImageOne,
   heading: "Legacy of Prestige",
-  title: "Precision. Power. Prestige.",
+  title: "Precision | Power | Prestige",
   description:
     "At Auto Empire, we unite the elegance of luxury with the thrill of performance. Our showroom features a handpicked selection of the world’s most coveted luxury cars and adrenaline-charged racing machines — each chosen to ignite passion in every kind of driver. From refined cruisers to track-ready beasts, we deliver vehicles that turn heads and dominate roads.",
   descriptionTwo:
