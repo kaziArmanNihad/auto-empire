@@ -5,8 +5,6 @@ import { AboutFounderSection } from "../../app/constants";
 import { motion } from "framer-motion";
 import { getAnimation } from "@/utils/Animation";
 
-const tags = ["Visionary", "Full-stack dev", "Based in Dhaka"];
-
 function AboutPageFounderSection() {
   return (
     <div
@@ -77,19 +75,14 @@ function AboutPageFounderSection() {
             </div>
           </motion.div>
 
-          {/* Tags */}
+          {/* Tag */}
           <motion.div
             {...getAnimation("right", { delay: 0.5 })}
             className="flex flex-wrap gap-2"
           >
-            {tags.map((tag) => (
-              <span
-                key={tag}
-                className="rounded-full border border-orange-500/30 bg-orange-500/10 px-3 py-1 text-xs font-medium text-orange-400"
-              >
-                {tag}
-              </span>
-            ))}
+            <span className="rounded-full border border-orange-500/30 bg-orange-500/10 px-3 py-1 text-xs font-medium text-orange-400">
+              Based in Dhaka, Bangladesh
+            </span>
           </motion.div>
         </div>
       </div>

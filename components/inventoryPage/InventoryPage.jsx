@@ -206,7 +206,7 @@ function InventoryPage() {
       {/* Pagination */}
       {totalPages > 1 && (
         <div className="mt-10 flex items-center justify-between">
-          <p className="w-24 border text-sm text-white/40">
+          <p className="w-24 text-sm text-white/40">
             Page {currentPage} of {totalPages}
           </p>
           <Pagination>

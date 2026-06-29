@@ -23,7 +23,7 @@ function AboutPageStorySection() {
         <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-orange-500">
           Our story
         </p>
-        <h1 className="mb-2 text-5xl font-bold leading-tight text-white">
+        <h1 className="mb-2 text-4xl font-bold leading-tight text-white">
           {AboutStorySection.heading}
         </h1>
         <div className="h-[3px] w-10 rounded-full bg-orange-500" />

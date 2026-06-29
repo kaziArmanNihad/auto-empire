@@ -25,7 +25,7 @@ function ContactPageHeroSection() {
       label: "Working hours",
       value: ContactHeroSection.subtitle,
       sub: ContactHeroSection.openDay,
-      badge: { text: "Open now", color: "text-emerald-400 bg-emerald-400/10" },
+      badge: { text: "Open now", color: "text-white bg-orange-500" },
     },
     {
       icon: <MdCalendarToday size={18} />,
@@ -80,7 +80,7 @@ function ContactPageHeroSection() {
                   <span
                     className={`mt-2 inline-flex items-center gap-1.5 rounded-full px-2.5 py-0.5 text-xs font-semibold ${badge.color}`}
                   >
-                    <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
+                    <span className="h-1.5 w-1.5 rounded-full bg-white" />
                     {badge.text}
                   </span>
                 )}
